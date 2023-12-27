@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="PRACTICE4.CSS"> -->
+    <link rel="icon" href="https://png.pngtree.com/png-vector/20191018/ourmid/pngtree-dog-logo-design-vector-icon-png-image_1824202.jpg" type="">
+
+    <style>
+        *{
+    margin: 0px;
+    padding: 0;
+    /* overflow-x: hidden; */
+}
+.A{
+    background-color:#CC313D;
+    border-radius: 30PX ;
+    display: inline;
+    display: flex;
+    width: 1525px;
+    height: 380px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 50px;
+    z-index: -3;
+}
+.B{
+   border-radius: 30px;
+   justify-content: space-between;
+   transition-duration: 0.5S;
+}
+.C{
+    width:1525;
+    height: 300px;
+    background-color:#F7C5CC;
+    border-radius: 30PX;
+    border: 2PX solid black;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top:40px;
+    margin-bottom: 0px;
+    text-align: center;   
+    transition-duration: 1s;
+}
+.C:hover{
+    box-shadow: 10px 10px 10px;
+    
+    
+}
+.B:hover{
+    scale: 1.05;
+    
+}
+.P{
+    margin-top: 5px;
+    margin-left:   5px;
+    margin-right:  5px;
+    padding-left:  5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    width: 425px;
+}
+#img1 ,#img2 ,#img3{
+    margin-top: 8px;
+    margin-bottom: 0px;
+    
+}
+#img1{
+    height: 125px;
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+#img2{
+    height: 125px;
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 30px;
+    
+
+}
+#img3{
+    height: 125px;
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 30px;
+    
+}
+.header1{
+    width: 1525px;
+    background-color: #CC313D;
+    border-radius: 0px;
+    margin-top: 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.ul3{
+    display: flex;
+    color: black;
+    position: fixed;
+    position: relative;
+}
+#li1{
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition-duration: 1S;
+}
+#li3{
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#li1:hover{
+    box-shadow: 5px 5px 10px;
+    scale: 1.1;
+    
+}
+#li3:hover{
+    box-shadow: 5px 5px 10px;
+    scale: 1.1;
+}
+#li1{
+    font-size:20px;
+    
+    margin-left:25px ;
+    background-color: #F7C5CC;
+    padding: 5px;
+    border-radius: 5px;
+    list-style: none;
+    padding: 10px;
+    text-decoration: rgb(8, 8, 8);
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+    justify-content: space-between;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    transition-duration: 0.55;
+}
+#li3{
+    font-size:20px;
+    
+    margin-right: 0px;
+    padding-bottom: 0px;
+    background-color: #F7C5CC;
+    padding: 5px;
+    border-radius: 5px;
+    list-style: none;
+    padding: 10px;
+    margin-left: 705px;
+    text-decoration: rgb(8, 8, 8);
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+    transition-duration: 1s;
+}
+.navbar2{
+    -moz-box-align: center;
+   
+    top: 0pz;
+}
+.name{
+    margin-top: 15px;
+}
+.input{
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    border: black;
+    margin-top: 17px;
+    padding-left: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#sear{
+    margin-left: 60px;
+    margin-right: 5px;
+    margin-top: 16px;
+    font-size:20px;
+    padding-bottom: 0px;
+    background-color: #F7C5CC;
+    padding: 5px;
+    border-radius: 5px;
+    list-style: none;
+    margin-bottom: 0%;
+}
+.submit2{
+    margin-left: 0px;
+    margin-right: px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 60px;
+}
+.footer{
+    background-color: #CC313D;
+    color: white;
+
+}
+#footer1{
+    color:#ffffff ;
+}
+
+.tabler1{
+    color: #FFF;
+}
+.divtable{
+    display: flex;
+}
+.selection_tables{
+    display: flex;
+    justify-content: space-around;
+}
+body{
+    background-color: #F7C5CC;
+}
+    </style>
+</head>
+<body>
+    <div class="header1">
+    <div class="navbar2">
+        <ul class="ul3" type="none">
+            <div id="li1"><i class="fa-solid fa-dog"></i> Dog's-breeds</div>
+            <div >
+                <i id="sear" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="sear2">
+                <input  class="input" type="search" name="input" placeholder="  Search Your favourite Dog" size="30" value="" >
+                <input class="submit2"  type="button" value="Search">
+            </div>
+            <div id="li3"><i class="fa-solid fa-right-to-bracket"></i></div>
+          <!-- <div id="li1"><i class="fa-solid fa-paw"></i></div>
+          <div id="li2" align="center">Dog</div>
+          <div id="li3"><i class="fa-solid fa-paw"></i></div> -->
+          
+        </ul>
+    </div>
+    </div>
+   <br><br>
+   <br>
+    <SEction class="A">
+        <DIV class="B">
+            <DIV align="center" class="C">
+                <h1 align="center"class='name'>Beagle</h1>
+                <a href="https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg">
+                <img id="img3" align="center" src="https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg" alt="dog" class="dog"> </a> <br>
+            <P class="P"> 
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veniam eaque esse impedit iusto reprehenderit iure dolore, perspiciatis nemo numquam saepe quidem doloribus deserunt quo magni odit consequuntur eius repudiandae.
+                <a href="https://www.akc.org/dog-breeds/beagle/">Click here</a> to read more.
+            </P>
+        </DIV>
+
+        </DIV>
+
+        <DIV class="B">
+            <DIV  align="center" class="C">
+                <h1 align="center" class='name'>German Shepherd</h1>
+                <a href="https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg">
+                <img  id="img2" align="center" src="https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg"  alt="dog" class="dog"><br>
+            <P class="P"></a>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veniam eaque esse impedit iusto reprehenderit iure dolore, perspiciatis nemo numquam saepe quidem doloribus deserunt quo magni odit consequuntur eius repudiandae.
+                <a href="https://www.akc.org/dog-breeds/german-shepherd-dog/">Click here</a> to read more.
+            </P>
+        </DIV>
+
+        </DIV>
+
+        <DIV class="B">
+            <DIV  align="center" class="C">
+                <h1 align="center"class='name'>Labra dog</h1>
+                <a href="https://static.wixstatic.com/media/fee204_69dd7f4f05224a93be87f0f8d1377db7~mv2.jpg/v1/fill/w_640,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/fee204_69dd7f4f05224a93be87f0f8d1377db7~mv2.jpgz">
+                <img id="img1" align="center" src="https://static.wixstatic.com/media/fee204_69dd7f4f05224a93be87f0f8d1377db7~mv2.jpg/v1/fill/w_640,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/fee204_69dd7f4f05224a93be87f0f8d1377db7~mv2.jpg" alt="dog" class="dog">
+                </a>
+            <P class="P">
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veniam eaque esse impedit iusto reprehenderit iure dolore, perspiciatis nemo numquam saepe quidem doloribus deserunt quo magni odit consequuntur eius repudiandae.
+                <a href="https://www.akc.org/dog-breeds/labrador-retriever/"><b>Click here</b></a>to read more.
+            </P>
+        </DIV>
+
+        </DIV>
+
+    </SEction>
+
+
+
+    <!-- SEC.............................................................................................................................. -->
+
+<BR></BR> 
+    <SEction class="A">
+        <DIV class="B">
+            <DIV align="center" class="C">
+                <h1 align="center"class='name'>Golden Retriever</h1>
+                <a href=https://cdn.pixabay.com/photo/2016/11/16/00/19/golden-retriever-1827899_960_720.jpg">
+                <img id="img3" align="center" src="https://cdn.pixabay.com/photo/2016/11/16/00/19/golden-retriever-1827899_960_720.jpg" alt="dog" class="dog"> </a> <br>
+            <P class="P"> 
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veniam eaque esse impedit iusto reprehenderit iure dolore, perspiciatis nemo numquam saepe quidem doloribus deserunt quo magni odit consequuntur eius repudiandae.
+                <a href="https://www.akc.org/dog-breeds/golden-retriever/">Click here</a> to read more.
+            </P>
+        </DIV>
+
+        </DIV>
+
+        <DIV class="B">
+            <DIV  align="center" class="C">
+                <h1 align="center" class='name'>Greyhound</h1>
+                <a href="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTqVutS7aDwrjC9ivr5srmn-snNVnJgOH0ejXNH_RkYJdeHDVKIxPwHLWxx5hQo68A4vQCoGkM4PYcTJZQ">
+                <img  id="img2" align="center" src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTqVutS7aDwrjC9ivr5srmn-snNVnJgOH0ejXNH_RkYJdeHDVKIxPwHLWxx5hQo68A4vQCoGkM4PYcTJZQ"  alt="dog" class="dog"><br>
+            <P class="P"></a>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veniam eaque esse impedit iusto reprehenderit iure dolore, perspiciatis nemo numquam saepe quidem doloribus deserunt quo magni odit consequuntur eius repudiandae.
+                <a href="https://www.akc.org/dog-breeds/greyhound/">Click here</a> to read more.
+            </P>
+        </DIV>
+
+        </DIV>
+
+        <DIV class="B">
+            <DIV  align="center" class="C">
+                <h1 align="center"class='name'>Pug</h1>
+                <a href="https://fordigitalskills.com/wp-content/uploads/2022/12/pug-dog.webp">
+                <img id="img1" align="center" src="https://bestforpets.in/wp-content/uploads/2023/01/Pug-Dog-price-in-india.jpg" alt="dog" class="dog">
+                </a>
+            <P class="P">
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veniam eaque esse impedit iusto reprehenderit iure dolore, perspiciatis nemo numquam saepe quidem doloribus deserunt quo magni odit consequuntur eius repudiandae.
+                <a href="https://www.akc.org/dog-breeds/pug/"><b>Click here</b></a>to read more.
+            </P>
+        </DIV>
+
+        </DIV>
+
+    </SEction>
+    <br><br>
+    <section class="selection_tables">
+        <div class="divtable1">
+            <TABLE class="table1" border="2PX" CELLSPACING='0PX' CELLPADDING="5PX" WIDTH="500px" height="300PX" class="TAB">
+            <tr align="center" style="background-color: #CC313D;"> 
+                <td class="tabler1" align="center"><b>Sr.no</b></td>
+                <td class="tabler1" align="center"><b>Dog's breeds</b></td>
+                <td class="tabler1" align="center"><b>Price</b></td>
+            </tr>
+            <tr>
+                <td align="center">1.</td>
+                <td align="center">beagle</td>
+                <td align="center">18k-30k</td>
+            </tr>
+            <tr>
+                <td align="center">2.</td>
+                <td align="center">German Shepherd</td>
+                <td align="center">12k-20k</td>
+            </tr>
+            <tr>
+                <td align="center">3.</td>
+                <td align="center">Labra dog</td>
+                <td align="center">5k-10k</td>
+            </tr>
+            <tr>
+                <td align="center">4.</td>
+                <td align="center">Golden Retriever</td>
+                <td align="center">25k-95k</td>
+            </tr>
+            <tr>
+                <td align="center">5.</td>
+                <td align="center">Greyhound</td>
+                <td align="center">35k-50k</td>
+            </tr>
+            <tr>
+                <td align="center">6.</td>
+                <td align="center">Pug</td>
+                <td align="center">15k-25k</td>
+            </tr>
+           </table>
+        </div>
+   
+        <div>
+            <TABLE class="table1" border="2PX" CELLSPACING='0PX' CELLPADDING="5PX" WIDTH="500px" height="300PX" class="TAB">
+            <tr align="center" style="background-color: #CC313D;"> 
+                <td class="tabler1" align="center"><b>Sr.no</b></td>
+                <td class="tabler1" align="center"><b>Dog's breeds</b></td>
+                <td class="tabler1" align="center"><b>Price</b></td>
+            </tr>
+            <tr>
+                <td align="center">1.</td>
+                <td align="center">beagle</td>
+                <td align="center">18k-30k</td>
+            </tr>
+            <tr>
+                <td align="center">2.</td>
+                <td align="center">German Shepherd</td>
+                <td align="center">12k-20k</td>
+            </tr>
+            <tr>
+                <td align="center">3.</td>
+                <td align="center">Labra dog</td>
+                <td align="center">5k-10k</td>
+            </tr>
+            <tr>
+                <td align="center">4.</td>
+                <td align="center">Golden Retriever</td>
+                <td align="center">25k-95k</td>
+            </tr>
+            <tr>
+                <td align="center">5.</td>
+                <td align="center">Greyhound</td>
+                <td align="center">35k-50k</td>
+            </tr>
+            <tr>
+                <td align="center">6.</td>
+                <td align="center">Pug</td>
+                <td align="center">15k-25k</td>
+            </tr>
+           </table>
+        </div>
+    </section>
+
+
+    
+
+
+    <br><br>    
+    <footer align="center" class="footer">
+        <p id="footer1">Copyright 2023 My Website</p>
+        <p id="footer1">Contact us at <a href="mailto:info@mywebsite.com">info@mywebsite.com</a></p>
+        
+        <p id="footer1"><a href="about.html">About Us</a> | <a href="contact.html">Contact Us</a> | <a href="privacy.html">Privacy Policy</a></p>
+      </footer>
+</body>
+</html>
